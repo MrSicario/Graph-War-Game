@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            stylesheets="@styles.css" fx:controller="ui.ColorSelectController">
+    <top>
+        <Label text="Ce jeu se joue localement et par 2 joueurs" BorderPane.alignment="CENTER" styleClass="subtitle"/>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="18">
+            <Label fx:id="promptLabel" text="Joueur 1, choisissez votre couleur" styleClass="headline"/>
+            <FlowPane hgap="10" vgap="10" alignment="CENTER">
+                <children>
+                    <Button styleClass="color-chip" fx:id="c1" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c2" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c3" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c4" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c5" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c6" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c7" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c8" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c9" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c10" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c11" onAction="#onPickColor"/>
+                    <Button styleClass="color-chip" fx:id="c12" onAction="#onPickColor"/>
+                </children>
+            </FlowPane>
+            <Button fx:id="launchButton" text="Lancer le jeu" onAction="#onLaunch" disable="true" styleClass="primary-rounded"/>
+        </VBox>
+    </center>
+</BorderPane>
+

@@ -1,0 +1,49 @@
+.status-label {
+  -fx-font-weight: bold;
+}
+
+.graph-pane {
+  -fx-background-color: linear-gradient(to bottom, #1f1f28, #2a2a38);
+}
+
+.node-circle {
+  -fx-stroke: #333333;
+  -fx-stroke-width: 2px;
+}
+
+.edge-line {
+  -fx-stroke: rgba(255,255,255,0.35);
+  -fx-stroke-width: 1.5px;
+}
+
+.neutral-node { -fx-fill: #d0d0d0; }
+.red-node { -fx-fill: #d64545; }
+.blue-node { -fx-fill: #3b82f6; }
+
+.title-3d {
+  -fx-font-size: 48px;
+  -fx-font-weight: 800;
+  -fx-fill: linear-gradient(#ffffff, #cbd5e1);
+  -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 20, 0.0 , 0 , 8 );
+}
+
+.primary-rounded {
+  -fx-background-radius: 24px;
+  -fx-padding: 10 22 10 22;
+  -fx-background-color: #3b82f6;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+.subtitle { -fx-font-size: 16px; -fx-font-weight: 600; }
+.headline { -fx-font-size: 20px; -fx-font-weight: 700; }
+.title-small { -fx-font-size: 24px; -fx-font-weight: 800; }
+
+.color-chip {
+  -fx-min-width: 44px;
+  -fx-min-height: 44px;
+  -fx-background-radius: 22px;
+  -fx-border-radius: 22px;
+  -fx-border-color: rgba(255,255,255,0.6);
+}
+

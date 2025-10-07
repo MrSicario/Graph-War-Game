@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            stylesheets="@styles.css" fx:controller="ui.BoardController">
+    <top>
+        <HBox spacing="20" alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
+            <Label text="Graph War" styleClass="title-small"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="Nouvelle partie" onAction="#onNewGame"/>
+        </HBox>
+    </top>
+    <center>
+        <BorderPane>
+            <center>
+                <Canvas fx:id="canvas" width="800.0" height="600.0"/>
+            </center>
+            <bottom>
+                <HBox spacing="16" alignment="CENTER">
+                    <Label text="Dé: "/>
+                    <Label fx:id="diceLabel" text=""/>
+                    <Button text="Lancer le dé" onAction="#onRollDice" fx:id="diceButton"/>
+                    <Separator orientation="VERTICAL"/>
+                    <Label text="Tour:"/>
+                    <Label fx:id="turnLabel"/>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </center>
+    <right>
+        <VBox spacing="10" alignment="TOP_LEFT" prefWidth="240">
+            <Label text="Dashboard" styleClass="headline"/>
+            <Label text="Joueur 1" fx:id="p1Label"/>
+            <Label text="Rectangles:"/>
+            <Label fx:id="p1RectLabel"/>
+            <Label text="Triangles droits:"/>
+            <Label fx:id="p1TriLabel"/>
+            <Separator/>
+            <Label text="Joueur 2" fx:id="p2Label"/>
+            <Label text="Rectangles:"/>
+            <Label fx:id="p2RectLabel"/>
+            <Label text="Triangles droits:"/>
+            <Label fx:id="p2TriLabel"/>
+            <Separator/>
+            <Label fx:id="winnerLabel" styleClass="headline"/>
+        </VBox>
+    </right>
+</BorderPane>
+

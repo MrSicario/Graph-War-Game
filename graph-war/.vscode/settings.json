@@ -1,0 +1,12 @@
+{
+  "java.project.sourcePaths": [
+    "src/app"
+  ],
+  "java.project.resourcePaths": [
+    "src/resources"
+  ],
+  // Optional: if you use other libs put patterns here
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar"
+  ]
+}
